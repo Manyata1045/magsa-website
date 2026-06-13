@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  -webkit-font-smoothing: antialiased; /* 👈 added */
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* GLOBAL SECTION SPACING */
+section {
+  padding: clamp(42px, 6vw, 64px) clamp(14px, 2.8vw, 24px);
+}
+
+/* CONTAINER (center + consistent width) */
+.container {
+  width: 92%;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #5CBCC3;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  letter-spacing: 0.5px;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+/* TEXT */
+p {
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* BUTTONS */
+button {
+  transition: all 0.3s ease;
+  min-height: 44px;
+  max-width: 100%;
+  touch-action: manipulation;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* CARDS */
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.07);
+}
+
+/* GALLERY */
+.gallery-card {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: clamp(220px, 32vw, 320px);
+  object-fit: cover;
+  transition:
+    transform 0.65s ease,
+    opacity 0.45s ease;
+}
+
+.gallery-card:hover .gallery-img {
+  transform: scale(1.045);
+  opacity: 0.96;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: clamp(38px, 8vw, 46px) 18px;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 10vw, 2.6rem);
+  }
+
+  h2 {
+    font-size: clamp(1.65rem, 7vw, 2.1rem);
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 5.5vw, 1.6rem);
+  }
+
+  p {
+    font-size: 0.96rem;
+  }
+
+  button {
+    width: 100%;
+    max-width: 320px;
+    padding: 13px 18px !important;
+  }
+
+  .card:hover,
+  .gallery-card:hover .gallery-img,
+  button:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: clamp(34px, 9vw, 38px) 16px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .gallery-card {
+    border-radius: 10px;
+  }
+
+  .gallery-img {
+    height: clamp(210px, 72vw, 280px);
+  }
+}
