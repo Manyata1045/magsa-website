@@ -312,9 +312,10 @@ const workshopListContainer = {
 
 const workshopList = {
   columns: 2,
-  columnGap: "60px",
-  margin: 0,
-  paddingLeft: "24px",
+  columnGap: "120px",
+  maxWidth: "1200px",
+  margin: "0 auto",
+  paddingLeft: "40px",
 };
 
 const workshopListItem = {
