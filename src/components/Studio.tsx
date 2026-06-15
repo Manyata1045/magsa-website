@@ -26,19 +26,27 @@ useEffect(() => {
        }}>
       <div className="container">
       {/* STUDIO INTRO */}
-      <div style={studioIntro}>
-  <h2 style={studioTitle}>The Studio</h2>
+      <div style={aboutBox}>
+  <h3 style={aboutHeading}>
+    The Studio
+  </h3>
 
-  <p style={studioText}>
-    <strong>A Space Where Creativity Comes Alive</strong>
-    <br />
+  <p style={studioTagline}>
+    A Space Where Creativity Comes Alive
+  </p>
+
+  <p style={aboutText}>
     MAGSA Studio is a vibrant, professionally equipped creative space designed
     for workshops, artistic collaborations, immersive experiences, and
-    community-driven events. From café art sessions with Nothing Before Coffee
-    and retail activations with Shoppers Stop, to editorial collaborations with
-    Vogue India for Benetton's summer collection launch and creative business
-    events such as Shift and many more, MAGSA brings art into spaces where it is
-    least expected and most remembered.
+    community-driven events.
+  </p>
+
+  <p style={aboutText}>
+    From café art sessions with Nothing Before Coffee and retail activations
+    with Shoppers Stop, to editorial collaborations with Vogue India for
+    Benetton's summer collection launch and creative business events such as
+    Shift and many more, MAGSA brings art into spaces where it is least
+    expected and most remembered.
   </p>
 </div>
         {/* EVENT PHOTOS */}
@@ -265,7 +273,7 @@ const aboutBox = {
 };
 
 const aboutHeading = {
-  color: "#7A3E5C", // instead of pink
+  color: "#5CBCC3",
   marginBottom: "24px",
   fontSize: "clamp(1.55rem, 5vw, 2.1rem)",
   fontWeight: 600,
@@ -382,25 +390,10 @@ const slideshowImage = {
   objectFit: "contain" as const,
   display: "block",
 };
-const studioTitle = {
-  textAlign: "center" as const,
-  margin: "0 0 16px",
-  color: "#7A3E5C",
-  fontSize: "clamp(1.7rem, 4vw, 2.3rem)",
+const studioTagline = {
+  color: "#C77AA3",
+  fontSize: "clamp(1.05rem, 2.8vw, 1.2rem)",
   fontWeight: 600,
-  lineHeight: 1.1,
-};
-
-const studioIntro = {
-  textAlign: "center" as const,
-  maxWidth: "1200px",
-  margin: "0 auto 40px",
-};
-
-const studioText = {
-  margin: "0 auto",
-  color: "#555",
-  fontSize: "clamp(1rem, 2.2vw, 1.12rem)",
-  lineHeight: 1.85,
-  maxWidth: "1100px",   // was 900px
+  margin: "0 0 18px",
+  lineHeight: 1.4,
 };

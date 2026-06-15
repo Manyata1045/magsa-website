@@ -162,27 +162,44 @@ export default function Academy() {
 
         {/* ---------------- ABOUT STRIP ---------------- */}
         <div style={aboutBox}>
-          <h3 style={aboutHeading}>
-            Learn Art With Depth & Creativity
-          </h3>
+  <h3 style={aboutHeading}>
+    The Academy
+  </h3>
 
-          <p style={aboutText}>
-            MAGSA Academy offers structured learning programs designed for both
-            beginners and advanced learners. Our classes focus on creativity,
-            artistic confidence, technique, and mindful expression.
-          </p>
+  <p style={aboutTagline}>
+    Learn Art With Depth & Creativity
+  </p>
 
-          <p style={aboutText}>
-            From mandala art and fine art practices to workshops and creative
-            explorations, the academy nurtures students in a supportive and
-            inspiring environment.
-          </p>
+  <p style={aboutText}>
+    MAGSA Academy offers structured learning programmes designed for beginners,
+    advancing students, and serious practitioners alike. Every programme is
+    built around four foundational pillars:
+    <strong> OBSERVE, CREATE, CURATE & SELL.</strong>
+  </p>
 
-          <p style={aboutText}>
-            We also guide students preparing for creative entrances,
-            certifications, exhibitions, and portfolio development.
-          </p>
-        </div>
+  <p style={aboutText}>
+    From different art styles, forms and techniques to immersive creative
+    explorations, the Academy nurtures each student in a supportive,
+    professionally guided, and genuinely inspiring environment.
+  </p>
+
+  <p style={aboutText}>
+    We also prepare students for what comes next, offering focused guidance
+    for creative entrance examinations, certification programmes, exhibition
+    participation, and portfolio development.
+  </p>
+
+  <p style={aboutText}>
+    For our youngest learners, the Academy runs a dedicated Education Through
+    Art programme using artistic practice as a tool for cognitive, analytical,
+    and creative development in children up to 12 years of age.
+  </p>
+
+  <p style={aboutText}>
+    Whether you are here to discover, to grow, or to master, the MAGSA Academy
+    meets you where you are and takes you further.
+  </p>
+</div>
 
         {/* ---------------- FEE STRUCTURE ---------------- */}
 {/* ---------------- FEE STRUCTURE ---------------- */}
@@ -567,4 +584,11 @@ const feeHeading = {
   fontWeight: 700,
   marginBottom: "40px",
   letterSpacing: "0.02em",
+};
+const aboutTagline = {
+  color: "#7A3E5C",
+  fontSize: "clamp(1.05rem, 2.8vw, 1.2rem)",
+  fontWeight: 600,
+  margin: "0 0 18px",
+  lineHeight: 1.4,
 };
