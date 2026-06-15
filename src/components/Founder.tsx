@@ -32,8 +32,8 @@ const heroHighlights = [
 const educationItems = [
   "B.A. with Drawing & Painting, English Literature, and Sociology from Kanoria P.G. Girls College, Jaipur.",
   "M.A. in Drawing & Painting from Kanoria P.G. Girls College, Jaipur.",
-  "Pursuing Post Graduate Diploma in Counselling and Guidance from ICTRC.",
-  "Pursuing Doctor of Philosophy at JECRC University, School of Design.",
+  "Post Graduate Diploma in Counselling and Guidance from ICTRC.",
+  "Pursuing PhD.(Doctor of Philosophy) at JECRC University, School of Design.",
 ];
 
 const workshopItems = [

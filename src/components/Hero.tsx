@@ -8,6 +8,13 @@ export default function Hero({
     <section style={heroSection}>
       <style>
         {`
+        .hero-nav-link {
+  transition: color 0.25s ease;
+}
+
+.hero-nav-link:hover {
+  color: #C77AA3 !important;
+}
           .hero-mandala-link {
             transition:
               transform 0.28s ease,
@@ -37,39 +44,45 @@ export default function Hero({
         <h1 style={brandTitle}>Mandala Art</h1>
 
         <h2 style={brandSubtitle}>
-  <span
-    style={
-      activePage === "gallery"
-        ? activeWordStyle
-        : {}
-    }
+  <Link
+    to="/gallery"
+    className="hero-nav-link"
+    style={{
+      textDecoration: "none",
+      color: activePage === "gallery" ? "#C77AA3" : "#5CBCC3",
+      ...(activePage === "gallery" ? activeWordStyle : {}),
+    }}
   >
     Gallery
-  </span>
+  </Link>
 
   {" • "}
 
-  <span
-    style={
-      activePage === "studio"
-        ? activeWordStyle
-        : {}
-    }
+  <Link
+    to="/studio"
+    className="hero-nav-link"
+    style={{
+      textDecoration: "none",
+      color: activePage === "studio" ? "#C77AA3" : "#5CBCC3",
+      ...(activePage === "studio" ? activeWordStyle : {}),
+    }}
   >
     Studio
-  </span>
+  </Link>
 
   {" • "}
 
-  <span
-    style={
-      activePage === "academy"
-        ? activeWordStyle
-        : {}
-    }
+  <Link
+    to="/academy"
+    className="hero-nav-link"
+    style={{
+      textDecoration: "none",
+      color: activePage === "academy" ? "#C77AA3" : "#5CBCC3",
+      ...(activePage === "academy" ? activeWordStyle : {}),
+    }}
   >
     Academy
-  </span>
+  </Link>
 </h2>
         <p style={byline}>by Vasudha Sharma</p>
 

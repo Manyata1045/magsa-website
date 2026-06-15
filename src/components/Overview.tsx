@@ -269,7 +269,7 @@ const previewButton = {
 
 // EVENT SECTION - Full-width gallery feel
 const eventSection = {
-  marginTop: "clamp(48px, 8vw, 76px)",
+  marginTop: "clamp(16px, 3vw, 32px)",
   paddingTop: "clamp(32px, 6vw, 52px)",
   paddingBottom: "clamp(32px, 6vw, 52px)",
   backgroundColor: "#fafbfc",

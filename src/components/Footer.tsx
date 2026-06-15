@@ -113,14 +113,14 @@ export default function Footer() {
         </div>
 
         <div style={socialRow} className="magsa-footer-social">
-  <a
-    href="https://instagram.com/magsa.art"
-    target="_blank"
-    rel="noopener noreferrer"
-    style={socialLink}
-  >
-    Instagram
-  </a>
+        <a
+  href="https://www.instagram.com/mandala_art_gallery_studio_acd"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={socialLink}
+>
+  Instagram
+</a>
 
   <a
     href="https://facebook.com/yourpage"
@@ -132,13 +132,13 @@ export default function Footer() {
   </a>
 
   <a
-    href="https://linkedin.com/in/yourprofile"
-    target="_blank"
-    rel="noopener noreferrer"
-    style={socialLink}
-  >
-    LinkedIn
-  </a>
+  href="https://www.linkedin.com/company/mandala-art-gallery-studio-academy/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={socialLink}
+>
+  LinkedIn
+</a>
 </div>
         {/* BUTTON */}
         <div style={{ marginTop: "14px" }}>
