@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-
+import logo from "../assets/magsaaa.png";
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
@@ -28,20 +28,25 @@ export default function Navbar() {
             border-bottom: 1px solid rgba(122, 62, 92, 0.14);
           }
 
-          .magsa-navbar-inner {
-            max-width: 1180px;
-            margin: 0 auto;
-            padding: 18px 36px 16px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 36px;
-          }
+.magsa-navbar-inner {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 18px 48px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+}
 
-          .magsa-brand {
-            min-width: max-content;
-          }
+.magsa-logo {
+  width: 120px;
+  height: auto;
+}
 
+.magsa-brand {
+  margin-left: 0;
+}
           .magsa-brand-title {
             margin: 0;
             color: #7A3E5C;
@@ -133,12 +138,12 @@ export default function Navbar() {
           }
 
           @media (max-width: 767px) {
-            .magsa-navbar-inner {
-              padding: 14px 18px;
-              flex-direction: row;
-              align-items: center;
-              gap: 18px;
-            }
+   .magsa-navbar-inner {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 18px 24px 16px;
+}
 
             .magsa-brand {
               text-align: left;
@@ -298,12 +303,13 @@ export default function Navbar() {
 
       <nav className="magsa-navbar" aria-label="Primary navigation">
         <div className="magsa-navbar-inner">
-          <div className="magsa-brand">
-            <h2 className="magsa-brand-title">Mandala Art</h2>
-            <span className="magsa-brand-subtitle">
-              Gallery • Studio • Academy
-            </span>
-          </div>
+        <div className="magsa-brand">
+  <img
+    src={logo}
+    alt="MAGSA Logo"
+    className="magsa-logo"
+  />
+</div>
 
           <button
             type="button"
