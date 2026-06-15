@@ -130,8 +130,8 @@ const heroSection = {
   position: "relative" as const,
   overflow: "hidden",
   textAlign: "center" as const,
-  paddingTop: "clamp(38px, 8vw, 86px)",
-  paddingBottom: "clamp(24px, 5vw, 52px)",
+  paddingTop: "clamp(16px, 3vw, 32px)",
+  paddingBottom: "clamp(12px, 3vw, 24px)",
   backgroundColor: "#fff",
 };
 
@@ -205,7 +205,7 @@ const mandalaCenter = {
 };
 
 const signatureLines = {
-  margin: "clamp(30px, 7vw, 64px) auto 0",
+  margin: "clamp(22px, 5vw, 42px) auto 0",
   width: "94%",
   maxWidth: "1320px",
   display: "grid",

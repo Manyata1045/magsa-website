@@ -20,17 +20,11 @@ useEffect(() => {
   return (
     <>
 <Hero activePage="studio" />  
-      <section style={{ backgroundColor: "#fff" }}>
+      <section style={{ backgroundColor: "#fff",
+                  marginTop: "-60px"
+
+       }}>
       <div className="container">
-
-        {/* PAGE TITLE */}
-        {/* <div style={{ textAlign: "center", marginBottom: "clamp(38px, 7vw, 60px)" }}>
-          <h2 style={titleStyle}>Studio</h2>
-
-          <p style={subtitleStyle}>
-            Workshops, collaborations, creative experiences & artistic events
-          </p>
-        </div> */}
 
         {/* EVENT PHOTOS */}
         <div style={{ marginBottom: "clamp(48px, 8vw, 80px)" }}>

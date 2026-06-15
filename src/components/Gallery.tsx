@@ -227,6 +227,7 @@ export default function Gallery() {
       <section
         style={{
           backgroundColor: "#fff",
+          marginTop: "-60px"
         }}
       >
       <style>
@@ -258,15 +259,6 @@ export default function Gallery() {
         `}
       </style>
       <div className="container">
-
-        {/* PAGE TITLE */}
-        {/* <div style={{ textAlign: "center", marginBottom: "clamp(38px, 7vw, 60px)" }}>
-          <h2 style={titleStyle}>Gallery</h2>
-
-          <p style={subtitleStyle}>
-            Curated artworks, exhibitions, and commissioned creations by MAGSA
-          </p>
-        </div> */}
 
         {/* FEATURED ARTWORKS */}
         <div style={{ marginBottom: "clamp(48px, 8vw, 80px)" }}>
@@ -581,24 +573,6 @@ const exhibitions: Exhibition[] = [
   },
 ];
 
-/* ---------------- STYLES ---------------- */
-
-// const titleStyle = {
-//   color: "#7A3E5C",
-//   fontSize: "clamp(2.6rem, 7vw, 3.6rem)",
-//   fontWeight: 700,
-//   lineHeight: 1.08,
-//   letterSpacing: "0.02em",
-// };
-
-// const subtitleStyle = {
-//   color: "#C77AA3",
-//   marginTop: "16px",
-//   fontSize: "clamp(1.15rem, 3vw, 1.35rem)",
-//   lineHeight: 1.75,
-//   fontWeight: 400,
-//   letterSpacing: "0.01em",
-// };
 
 const sectionHeading = {
   color: "#7A3E5C",

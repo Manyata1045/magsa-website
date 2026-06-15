@@ -45,7 +45,7 @@ export default function About() {
           <div style={divider} />
 
           {/* WHAT WE DO */}
-          <h3 style={sectionHeading}>What We Do</h3>
+          <h3 style={sectionHeading}>Three Pillars of MAGSA</h3>
 
           <div style={cardRow}>
 

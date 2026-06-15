@@ -77,15 +77,15 @@ export default function Overview() {
   <h2 style={homeAboutHeading} className="magsa-home-about-title">A Universe of Creativity</h2>
 
   <p style={homeAboutText} className="magsa-home-about-text">
-    <strong>Mandala Art Gallery • Studio • Academy (MAGSA)</strong> is a
-    creative space where art is experienced, created, and studied. Established
-    in Jaipur, MAGSA brings together exhibitions, workshops, curated artworks,
-    and artistic learning experiences rooted in creativity and connection.
+    <strong>Mandala Art Gallery • Studio • Academy (MAGSA)</strong>  is a premier art institution, situated in Jaipur, a creative space rooted in the belief that art has the power to transform how we see the world and our place within it.
+Through structured academic programs, immersive art workshops, curated gallery exhibitions, and carefully crafted artistic experiences, MAGSA brings together learners, artists, and art enthusiasts under one roof  united by creative spirit and connection.
+Whether you are encountering art for the first time or deepening a lifelong practice, MAGSA offers a space that is both inspiring and rigorous, welcoming children, adults, hobbyists, and professional artists alike.
+
   </p>
 
   <div style={homeDivider} />
 
-  <h3 style={whatWeDoHeading}>What We Do</h3>
+  <h3 style={whatWeDoHeading}>Three Pillars of MAGSA  </h3>
 </div>
           <div style={previewGrid}>
             {previews.map((preview) => (
@@ -119,7 +119,7 @@ export default function Overview() {
           <div style={eventHeader} className="magsa-event-header">
             <div style={eventCopy}>
               <span style={eventEyebrow}>Exhibitions • Workshops • Art Events</span>
-              <h2 style={eventTitle} className="magsa-event-title">A living space for art in Jaipur</h2>
+              <h2 style={eventTitle} className="magsa-event-title">A home for artists and ideas</h2>
             </div>
           </div>
 
@@ -153,7 +153,7 @@ export default function Overview() {
 const previews = [
   {
     title: "Gallery",
-    text: "Original artworks and exhibitions curated for thoughtful spaces.",
+    text: "Original artworks and curated exhibitions that invite you to observe, reflect, and connect with art in thoughtfully designed spaces.",
     button: "View Gallery",
     path: "/gallery",
     image: galleryPreview,
@@ -162,7 +162,7 @@ const previews = [
   },
   {
     title: "Studio",
-    text: "Hands-on workshops, art events, and creative collaborations.",
+    text: "Hands-on workshops, collaborative art events, and creative sessions designed to bring people together through the joy of making.",
     button: "Explore Studio",
     path: "/studio",
     image: studioPreview,
@@ -171,7 +171,7 @@ const previews = [
   },
   {
     title: "Academy",
-    text: "Guided learning pathways for beginners and advanced learners.",
+    text: "Structured learning pathways for beginners, hobbyists, and advanced learners guided by experienced artists in an inspiring environment.",
     button: "See Academy",
     path: "/academy",
     image: academyPreview,
@@ -326,7 +326,8 @@ const eventImage = {
 };
 const homeAboutSection = {
   width: "100%",
-  margin: "0 auto clamp(28px, 5vw, 42px)",
+  margin: "-30px auto clamp(28px, 5vw, 42px)",
+  textAlign: "center" as const,
 };
 
 const homeAboutHeading = {
@@ -339,11 +340,11 @@ const homeAboutHeading = {
 };
 
 const homeAboutText = {
-  margin: "22px 0 0",
+  margin: "22px auto 0",
   color: "#C77AA3",
   fontSize: "clamp(1.08rem, 2.3vw, 1.18rem)",
   lineHeight: 1.9,
-  maxWidth: "920px",
+  maxWidth: "1200px",
 };
 
 const homeDivider = {

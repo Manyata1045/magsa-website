@@ -55,7 +55,7 @@ export default function GalleryPreview() {
       </style>
       <div className="container">
         <div style={headingRow} className="magsa-strip-heading">
-          <span style={eyebrow}>Current Visual Language</span>
+          <span style={eyebrow}>Observe. Create. Curate. Exhibit. Sell.</span>
           <span style={line} />
         </div>
 
@@ -100,7 +100,7 @@ const headingRow = {
 
 const eyebrow = {
   color: "#7A3E5C",
-  fontSize: "clamp(0.82rem, 1.8vw, 0.95rem)",
+  fontSize: "clamp(1.2rem, 3vw, 1.8rem)",
   fontWeight: 600,
   letterSpacing: "0.18em",
   textTransform: "uppercase" as const,
