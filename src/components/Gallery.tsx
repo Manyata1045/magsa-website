@@ -362,11 +362,15 @@ export default function Gallery() {
 
           <div style={reviewSection}>
           <div style={reviewRow} className="review-row">
-    <img
-      src={clientWork1}
-      alt="Commissioned Artwork"
-      style={reviewImage}
-    />
+          <img
+  src={clientWork1}
+  alt="Commissioned Artwork"
+  style={{
+    ...reviewImage,
+    cursor: "zoom-in",
+  }}
+  onClick={() => setSelectedImage(clientWork1)}
+/>
 
     <div style={reviewContent}>
       <p style={reviewText}>
@@ -381,11 +385,15 @@ export default function Gallery() {
   </div>
 
   <div style={reviewRow} className="review-row">
-    <img
-      src={clientWork2}
-      alt="Commissioned Artwork"
-      style={reviewImage}
-    />
+  <img
+  src={clientWork2}
+  alt="Commissioned Artwork"
+  style={{
+    ...reviewImage,
+    cursor: "zoom-in",
+  }}
+  onClick={() => setSelectedImage(clientWork2)}
+/>
 
     <div style={reviewContent}>
       <p style={reviewText}>
@@ -399,11 +407,15 @@ export default function Gallery() {
     </div>
   </div>
   <div style={reviewRow} className="review-row">
-    <img
-      src={clientWork3}
-      alt="Commissioned Artwork"
-      style={reviewImage}
-    />
+  <img
+  src={clientWork3}
+  alt="Commissioned Artwork"
+  style={{
+    ...reviewImage,
+    cursor: "zoom-in",
+  }}
+  onClick={() => setSelectedImage(clientWork3)}
+/>
 
     <div style={reviewContent}>
       <p style={reviewText}>
