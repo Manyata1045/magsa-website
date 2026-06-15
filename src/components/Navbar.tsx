@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/magsaaa.png";
 const navItems = [
   { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
   { name: "Gallery", path: "/gallery" },
   { name: "Studio", path: "/studio" },
   { name: "Academy", path: "/academy" },
   { name: "Founder", path: "/founder" },
   { name: "Newsletter", path: "/newsletter" },
+  { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
 ];
 
