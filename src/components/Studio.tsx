@@ -133,13 +133,15 @@ useEffect(() => {
         <div style={{ marginBottom: "clamp(48px, 8vw, 80px)" }}>
           <h3 style={sectionHeading}>Workshop Experiences</h3>
 
-          <div style={workshopGrid}>
-            {workshops.map((workshop, i) => (
-              <div key={i} style={workshopCard} className="card">
-                <h4 style={workshopTitle}>{workshop}</h4>
-              </div>
-            ))}
-          </div>
+          <div style={workshopListContainer}>
+  <ol style={workshopList}>
+    {workshops.map((workshop, i) => (
+      <li key={i} style={workshopListItem}>
+        {workshop}
+      </li>
+    ))}
+  </ol>
+</div>
         </div>
 
         {/* CTA */}
@@ -183,14 +185,34 @@ const bookingImages = [
 ];
 
 const workshops = [
-  "Decoupage Workshop",
-  "Fabric Art Workshop",
-  "Fluid Art Workshop",
-  "Block Printing Workshop",
-  "Tie & Dye Workshop",
-  "Alcohol Ink Activity",
+  "Photo Frame Painting",
+  "Lippan Art on MDF Circle",
+  "Canvas Painting with Acrylic",
+  "Glass Painting on Frame",
+  "Fluid Art on Canvas",
+  "Clay Fridge Magnets Making",
+  "Flower Pot Painting with Planter",
+  "Canvas Tote Bag Painting",
+  "Colourful Mandala Art Making",
+  "Painting on Pebbles Art",
+  "Tissue Paper Art",
+  "Doodling Day",
+  "Trinket Trays with Cement",
+  "Frizzy Flower Making",
+  "Bird House Making & Painting",
+  "Texture on Canvas Painting",
+  "Resin Jewellery Making",
   "3D Paper Cut Illustration",
-  "Lippan Art Workshop",
+  "Coffee Painting Canvas",
+  "Decoupage Tissue Art",
+  "Dreamcatcher Making",
+  "Crochet Flower Making",
+  "Macrame Keychain",
+  "Miniature Food Sculpture",
+  "Candle Making Workshop",
+  "Hand Mirror Decor & Paint",
+  "Sea Shell Palette Painting",
+  "MDF Puzzle Painting",
 ];
 
 /* ---------------- STYLES ---------------- */
@@ -282,27 +304,34 @@ const stepsList = {
   lineHeight: "1.9",
 };
 
-const workshopGrid = {
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 240px), 1fr))",
-  gap: "clamp(16px, 4vw, 20px)",
+const workshopListContainer = {
+  backgroundColor: "transparent",
+  padding: 0,
+  borderRadius: 0,
 };
 
-const workshopCard = {
-  padding: "clamp(22px, 5vw, 28px)",
-  borderRadius: "12px",
-  backgroundColor: "#fff",
-  border: "1px solid #eee",
-  boxShadow: "0 8px 25px rgba(0,0,0,0.06)",
-};
-
-const workshopTitle = {
-  color: "#C77AA3",
-  fontSize: "clamp(1.08rem, 3vw, 1.22rem)",
-  fontWeight: 600,
-  lineHeight: 1.2,
+const workshopList = {
+  columns: 2,
+  columnGap: "60px",
   margin: 0,
+  paddingLeft: "24px",
 };
+
+const workshopListItem = {
+  marginBottom: "14px",
+  color: "#C77AA3",
+  fontSize: "clamp(1.08rem, 2.8vw, 1.2rem)",
+  fontWeight: 600,
+  lineHeight: 1.6,
+};
+
+// const workshopTitle = {
+//   color: "#C77AA3",
+//   fontSize: "clamp(1.08rem, 3vw, 1.22rem)",
+//   fontWeight: 600,
+//   lineHeight: 1.2,
+//   margin: 0,
+// };
 
 const ctaBox = {
   marginTop: "40px",
