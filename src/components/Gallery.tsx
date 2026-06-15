@@ -260,18 +260,23 @@ export default function Gallery() {
       </style>
       <div className="container">
 {/* GALLERY INTRO */}
-<div style={galleryIntro}>
-  <h2 style={galleryTitle}>The Gallery</h2>
+<div style={aboutBox}>
+  <h3 style={aboutHeading}>
+    The Gallery
+  </h3>
 
-  <p style={galleryText}>
+  <p style={galleryTagline}>
     A space where art is given room to breathe.
   </p>
 
-  <p style={galleryText}>
+  <p style={aboutText}>
     The MAGSA Gallery is a refined exhibition space in the heart of Jaipur —
-    home to a permanent collection and a thoughtfully rotating programme of exhibitions
-    celebrating the works of our faculty, students, and invited artists. Every work
-    here has been selected with care. Every wall, a considered choice.
+    home to a permanent collection and a thoughtfully rotating programme of
+    exhibitions celebrating the works of our faculty, students, and invited artists.
+  </p>
+
+  <p style={aboutText}>
+    Every work here has been selected with care. Every wall, a considered choice.
   </p>
 </div>
         {/* FEATURED ARTWORKS */}
@@ -758,24 +763,30 @@ const ctaPhone = {
   lineHeight: 1.4,
   textDecoration: "none",
 };
-const galleryIntro = {
-  textAlign: "center" as const,
-  maxWidth: "1000px",
-  margin: "0 auto 40px",
-};
-
-const galleryTitle = {
-  margin: "0 0 16px",
+const galleryTagline = {
   color: "#7A3E5C",
-  fontSize: "clamp(1.7rem, 4vw, 2.3rem)",
+  fontSize: "clamp(1.05rem, 2.8vw, 1.2rem)",
   fontWeight: 600,
-  lineHeight: 1.1,
+  margin: "0 0 18px",
+  lineHeight: 1.4,
+};
+const aboutBox = {
+  backgroundColor: "#f9f9f9",
+  padding: "clamp(26px, 6vw, 45px)",
+  borderRadius: "14px",
 };
 
+const aboutHeading = {
+  color: "#5CBCC3",
+  marginBottom: "24px",
+  fontSize: "clamp(1.55rem, 5vw, 2.1rem)",
+  fontWeight: 600,
+  lineHeight: 1.15,
+};
 
-const galleryText = {
-  margin: "0 0 10px",
+const aboutText = {
   color: "#555",
-  fontSize: "clamp(1rem, 2.2vw, 1.12rem)",
-  lineHeight: 1.75,
+  lineHeight: "1.85",
+  marginBottom: "20px",
+  fontSize: "clamp(1.08rem, 2.8vw, 1.18rem)",
 };
