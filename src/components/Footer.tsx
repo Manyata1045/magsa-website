@@ -1,5 +1,5 @@
 import WhatsAppButton from "./WhatsAppButton";
-
+import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer
@@ -114,30 +114,32 @@ export default function Footer() {
 
         <div style={socialRow} className="magsa-footer-social">
         <a
-  href="https://www.instagram.com/mandala_art_gallery_studio_acd"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={socialLink}
->
-  Instagram
-</a>
-
-  <a
-    href="https://facebook.com/yourpage"
+    href="https://www.linkedin.com/company/mandala-art-gallery-studio-academy/"
     target="_blank"
     rel="noopener noreferrer"
     style={socialLink}
+    aria-label="LinkedIn"
   >
-    Facebook
+    <FaLinkedin size={24} />
+  </a>
+  <a
+    href="https://www.instagram.com/mandala_art_gallery_studio_acd"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={socialLink}
+    aria-label="Instagram"
+  >
+    <FaInstagram size={24} />
   </a>
 
   <a
-  href="https://www.linkedin.com/company/mandala-art-gallery-studio-academy/"
+  href="https://www.facebook.com/p/Mandala-Art-GalleryStudioAcademy-by-Vasudha-Sharma-100064097738020/"
   target="_blank"
   rel="noopener noreferrer"
   style={socialLink}
+  aria-label="Facebook"
 >
-  LinkedIn
+  <FaFacebook size={24} />
 </a>
 </div>
         {/* BUTTON */}
@@ -176,11 +178,13 @@ const socialRow = {
 };
 
 const socialLink = {
-  color: "#f5f5f5",
-  fontSize: "0.95rem",
+  color: "#fff",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  fontSize: "1.4rem",
   textDecoration: "none",
-  opacity: 0.9,
-  transition: "0.2s ease",
+  transition: "transform 0.2s ease",
 };
 
 const footerContactLink = {
