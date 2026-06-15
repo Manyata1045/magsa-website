@@ -1,4 +1,8 @@
 import Hero from "../components/Hero";
+import clientWork1 from "../assets/client-work/client1.jpeg";
+import clientWork2 from "../assets/client-work/client2.jpeg";
+import clientWork3 from "../assets/client-work/client3.jpeg";
+
 import { useEffect, useState } from "react";
 import ps1 from "../assets/PS/PS1.jpeg";
 import ps2 from "../assets/PS/PS2.jpeg";
@@ -232,6 +236,12 @@ export default function Gallery() {
       >
       <style>
         {`
+        @media (max-width: 768px) {
+  .review-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
           @media (max-width: 1024px) {
             .magsa-exhibition-grid {
               grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
@@ -351,29 +361,63 @@ export default function Gallery() {
           </h3>
 
           <div style={reviewSection}>
-            <div style={reviewCard}>
-              <p style={reviewText}>
-                “The artwork transformed our space beautifully and added warmth
-                to the entire environment.”
-              </p>
+          <div style={reviewRow} className="review-row">
+    <img
+      src={clientWork1}
+      alt="Commissioned Artwork"
+      style={reviewImage}
+    />
 
-              <p style={reviewClient}>
-                — Jaipur Client
-              </p>
-            </div>
+    <div style={reviewContent}>
+      <p style={reviewText}>
+        "The artwork transformed our space beautifully and added warmth
+        to the entire environment."
+      </p>
 
-            <div style={reviewCard}>
-              <p style={reviewText}>
-                “MAGSA’s work feels deeply personal and artistically rich. The
-                detailing was incredible.”
-              </p>
+      <p style={reviewClient}>
+        — Jaipur Client
+      </p>
+    </div>
+  </div>
 
-              <p style={reviewClient}>
-                — Exhibition Visitor
-              </p>
-            </div>
-          </div>
-        </div>
+  <div style={reviewRow} className="review-row">
+    <img
+      src={clientWork2}
+      alt="Commissioned Artwork"
+      style={reviewImage}
+    />
+
+    <div style={reviewContent}>
+      <p style={reviewText}>
+        "MAGSA's work feels deeply personal and artistically rich.
+        The detailing was incredible."
+      </p>
+
+      <p style={reviewClient}>
+        — Exhibition Visitor
+      </p>
+    </div>
+  </div>
+  <div style={reviewRow} className="review-row">
+    <img
+      src={clientWork3}
+      alt="Commissioned Artwork"
+      style={reviewImage}
+    />
+
+    <div style={reviewContent}>
+      <p style={reviewText}>
+        "The artwork transformed our space beautifully and added warmth
+        to the entire environment."
+      </p>
+
+      <p style={reviewClient}>
+        — Jaipur Client
+      </p>
+    </div>
+  </div>
+</div>
+</div>
 
         {/* PARTICIPATION CTA */}
         <div style={ctaBox}>
@@ -665,24 +709,13 @@ const exhibitTitle = {
   margin: 0,
 };
 
-const reviewSection = {
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
-  gap: "clamp(16px, 4vw, 25px)",
-};
 
-const reviewCard = {
-  backgroundColor: "#fff",
-  padding: "clamp(22px, 5vw, 28px)",
-  borderRadius: "12px",
-  boxShadow: "0 8px 25px rgba(0,0,0,0.06)",
-};
 
 const reviewText = {
   color: "#555",
-  lineHeight: "1.85",
+  lineHeight: "1.9",
   fontStyle: "italic",
-  fontSize: "clamp(0.98rem, 2.4vw, 1.06rem)",
+  fontSize: "clamp(1rem, 2.5vw, 1.12rem)",
   margin: 0,
 };
 
@@ -774,6 +807,7 @@ const aboutBox = {
   backgroundColor: "#f9f9f9",
   padding: "clamp(26px, 6vw, 45px)",
   borderRadius: "14px",
+  marginBottom: "clamp(48px, 8vw, 80px)",
 };
 
 const aboutHeading = {
@@ -789,4 +823,35 @@ const aboutText = {
   lineHeight: "1.85",
   marginBottom: "20px",
   fontSize: "clamp(1.08rem, 2.8vw, 1.18rem)",
+};
+const reviewSection = {
+  display: "flex",
+  flexDirection: "column" as const,
+  gap: "24px",
+};
+
+const reviewRow = {
+  display: "flex",
+  gap: "36px",
+  alignItems: "center",
+  backgroundColor: "#fff",
+  borderRadius: "18px",
+  padding: "32px",
+  boxShadow: "0 12px 35px rgba(122, 62, 92, 0.08)",
+  border: "1px solid rgba(122, 62, 92, 0.08)",
+  flexWrap: "wrap" as const,
+};
+
+const reviewImage = {
+  width: "420px",
+  maxWidth: "100%",
+  height: "350px",
+  objectFit: "cover" as const,
+  borderRadius: "14px",
+  flexShrink: 0,
+};
+
+const reviewContent = {
+  flex: 1,
+  minWidth: "260px",
 };
