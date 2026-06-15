@@ -560,3 +560,11 @@ const programText = {
   fontSize: "clamp(0.95rem, 2.4vw, 1rem)",
   margin: 0,
 };
+const feeHeading = {
+  textAlign: "center" as const,
+  color: "#5CBCC3",
+  fontSize: "clamp(1.8rem, 5vw, 2.4rem)",
+  fontWeight: 700,
+  marginBottom: "40px",
+  letterSpacing: "0.02em",
+};
