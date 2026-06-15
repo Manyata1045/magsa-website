@@ -27,7 +27,7 @@ export default function About() {
             About MAGSA
           </h2>
 
-          <h3 style={subHeading}>A Universe of Creativity</h3>
+          <h3 style={subHeading}>Universe of creativity</h3>
 
           <p style={textStyle}>
             <strong>Mandala Art Gallery • Studio • Academy (MAGSA)</strong> is a
