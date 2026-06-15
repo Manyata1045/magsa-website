@@ -25,7 +25,22 @@ useEffect(() => {
 
        }}>
       <div className="container">
+      {/* STUDIO INTRO */}
+      <div style={studioIntro}>
+  <h2 style={studioTitle}>The Studio</h2>
 
+  <p style={studioText}>
+    <strong>A Space Where Creativity Comes Alive</strong>
+    <br />
+    MAGSA Studio is a vibrant, professionally equipped creative space designed
+    for workshops, artistic collaborations, immersive experiences, and
+    community-driven events. From café art sessions with Nothing Before Coffee
+    and retail activations with Shoppers Stop, to editorial collaborations with
+    Vogue India for Benetton's summer collection launch and creative business
+    events such as Shift and many more, MAGSA brings art into spaces where it is
+    least expected and most remembered.
+  </p>
+</div>
         {/* EVENT PHOTOS */}
         <div style={{ marginBottom: "clamp(48px, 8vw, 80px)" }}>
           <h3 style={sectionHeading}>Creative Event Highlights</h3>
@@ -44,30 +59,47 @@ useEffect(() => {
           </div>
         </div>
 
-        {/* STUDIO TEXT */}
-        <div style={aboutBox}>
-          <h3 style={aboutHeading}>
-            A Space Where Creativity Comes Alive
-          </h3>
+       {/* STUDIO TEXT */}
+<div style={aboutBox}>
+  <h3 style={aboutHeading}>
+    What The Studio Offers
+  </h3>
 
-          <p style={aboutText}>
-            MAGSA Studio is a vibrant creative space designed for workshops,
-            collaborations, immersive artistic experiences, and community-driven
-            events.
-          </p>
+  <p style={aboutText}>
+    <strong>Art Workshops</strong>
+    <br />
+    Open and themed workshops for individuals of all skill levels—from complete beginners to practising artists. Hands-on, guided, and designed to be genuinely enjoyable experiences.
+  </p>
 
-          <p style={aboutText}>
-            From interactive art sessions and café collaborations to premium
-            event experiences, the studio brings together artists, brands,
-            learners, and art lovers in a dynamic and expressive environment.
-          </p>
+  <p style={aboutText}>
+    <strong>Creative Collaborations</strong>
+    <br />
+    The Studio regularly partners with cafés, brands, and cultural spaces to produce curated artistic experiences that go beyond the conventional, bringing art into everyday settings.
+  </p>
 
-          <p style={aboutText}>
-            We have collaborated with creative spaces and brands through curated
-            experiences like <strong>Shift</strong>, café art sessions, and
-            customized workshop events.
-          </p>
-        </div>
+  <p style={aboutText}>
+    <strong>Community Events</strong>
+    <br />
+    Art sessions, showcase evenings, and creative gatherings that bring Jaipur's art community together in one expressive, welcoming space.
+  </p>
+
+  <p style={aboutText}>
+    <strong>Corporate Events & Brand Experiences</strong>
+    <br />
+    MAGSA Studio is available for corporate team-building workshops, brand activations, client experiences, and private creative events. We design bespoke art experiences tailored to your organisation's goals—whether that is fostering creativity, celebrating a milestone, or simply doing something remarkably different.
+  </p>
+
+  <p
+    style={{
+      ...aboutText,
+      marginBottom: 0,
+      fontWeight: 600,
+      color: "#7A3E5C",
+    }}
+  >
+    If you can’t come to the studio, we will bring the studio to you!
+  </p>
+</div>
 
         {/* BOOK US */}
         <div style={{ marginTop: "clamp(54px, 9vw, 90px)", marginBottom: "clamp(48px, 8vw, 80px)" }}>
@@ -211,19 +243,18 @@ const aboutBox = {
 };
 
 const aboutHeading = {
-  color: "#C77AA3",
-  marginBottom: "20px",
-  fontSize: "clamp(1.45rem, 5vw, 2rem)",
+  color: "#7A3E5C", // instead of pink
+  marginBottom: "24px",
+  fontSize: "clamp(1.55rem, 5vw, 2.1rem)",
   fontWeight: 600,
   lineHeight: 1.15,
-  letterSpacing: "0.01em",
 };
 
 const aboutText = {
   color: "#555",
-  lineHeight: "1.88",
-  marginBottom: "18px",
-  fontSize: "clamp(0.98rem, 2.4vw, 1.05rem)",
+  lineHeight: "1.85",
+  marginBottom: "20px",
+  fontSize: "clamp(1.08rem, 2.8vw, 1.18rem)",
 };
 
 
@@ -320,4 +351,26 @@ const slideshowImage = {
   aspectRatio: "10.18 / 8.18",
   objectFit: "contain" as const,
   display: "block",
+};
+const studioTitle = {
+  textAlign: "center" as const,
+  margin: "0 0 16px",
+  color: "#7A3E5C",
+  fontSize: "clamp(1.7rem, 4vw, 2.3rem)",
+  fontWeight: 600,
+  lineHeight: 1.1,
+};
+
+const studioIntro = {
+  textAlign: "center" as const,
+  maxWidth: "1200px",
+  margin: "0 auto 40px",
+};
+
+const studioText = {
+  margin: "0 auto",
+  color: "#555",
+  fontSize: "clamp(1rem, 2.2vw, 1.12rem)",
+  lineHeight: 1.85,
+  maxWidth: "1100px",   // was 900px
 };

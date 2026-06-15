@@ -259,7 +259,21 @@ export default function Gallery() {
         `}
       </style>
       <div className="container">
+{/* GALLERY INTRO */}
+<div style={galleryIntro}>
+  <h2 style={galleryTitle}>The Gallery</h2>
 
+  <p style={galleryText}>
+    A space where art is given room to breathe.
+  </p>
+
+  <p style={galleryText}>
+    The MAGSA Gallery is a refined exhibition space in the heart of Jaipur —
+    home to a permanent collection and a thoughtfully rotating programme of exhibitions
+    celebrating the works of our faculty, students, and invited artists. Every work
+    here has been selected with care. Every wall, a considered choice.
+  </p>
+</div>
         {/* FEATURED ARTWORKS */}
         <div style={{ marginBottom: "clamp(48px, 8vw, 80px)" }}>
           <h3 style={sectionHeading}>Featured Artworks</h3>
@@ -743,4 +757,25 @@ const ctaPhone = {
   fontSize: "0.95rem",
   lineHeight: 1.4,
   textDecoration: "none",
+};
+const galleryIntro = {
+  textAlign: "center" as const,
+  maxWidth: "1000px",
+  margin: "0 auto 40px",
+};
+
+const galleryTitle = {
+  margin: "0 0 16px",
+  color: "#7A3E5C",
+  fontSize: "clamp(1.7rem, 4vw, 2.3rem)",
+  fontWeight: 600,
+  lineHeight: 1.1,
+};
+
+
+const galleryText = {
+  margin: "0 0 10px",
+  color: "#555",
+  fontSize: "clamp(1rem, 2.2vw, 1.12rem)",
+  lineHeight: 1.75,
 };
