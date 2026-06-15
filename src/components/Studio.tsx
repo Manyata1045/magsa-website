@@ -1,5 +1,22 @@
 import Hero from "../components/Hero";
+import { useState, useEffect } from "react";
+import img1 from "../assets/steps-folder/1.jpg";
+import img2 from "../assets/steps-folder/2.jpg";
+import img3 from "../assets/steps-folder/3.jpg";
+import img4 from "../assets/steps-folder/4.jpg";
+import img5 from "../assets/steps-folder/5.jpg";
+import img6 from "../assets/steps-folder/6.jpg";
+import img7 from "../assets/steps-folder/7.jpg";
 export default function Studio() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentSlide((prev) => (prev + 1) % bookingImages.length);
+  }, 3000);
+
+  return () => clearInterval(interval);
+}, []);
   return (
     <>
 <Hero activePage="studio" />  
@@ -64,18 +81,13 @@ export default function Studio() {
             Book MAGSA For Your Next Event
           </h3>
 
-          <div style={bookingGrid}>
-            {bookingImages.map((img, i) => (
-              <div key={i} style={bookingCard} className="gallery-card">
-                <img
-                  src={img}
-                  alt="Workshop Event"
-                  className="gallery-img"
-                  style={bookingImage}
-                />
-              </div>
-            ))}
-          </div>
+          <div style={slideshowContainer}>
+  <img
+    src={bookingImages[currentSlide]}
+    alt="Workshop Event"
+    style={slideshowImage}
+  />
+</div>
 
           <div style={stepsBox}>
             <h4 style={stepsTitle}>
@@ -135,10 +147,13 @@ const eventPhotos = [
 ];
 
 const bookingImages = [
-  "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b",
-  "https://images.unsplash.com/photo-1578301978018-3005759f48f7",
-  "https://images.unsplash.com/photo-1513364776144-60967b0f800f",
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
 ];
 
 const workshops = [
@@ -217,22 +232,6 @@ const aboutText = {
   fontSize: "clamp(0.98rem, 2.4vw, 1.05rem)",
 };
 
-const bookingGrid = {
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))",
-  gap: "clamp(16px, 4vw, 20px)",
-};
-
-const bookingCard = {
-  borderRadius: "14px",
-  overflow: "hidden",
-};
-
-const bookingImage = {
-  width: "100%",
-  height: "clamp(220px, 36vw, 250px)",
-  objectFit: "cover" as const,
-};
 
 const stepsBox = {
   marginTop: "35px",
@@ -312,4 +311,19 @@ const ctaPhone = {
   fontWeight: 600,
   lineHeight: 1.4,
   textDecoration: "none",
+};
+const slideshowContainer = {
+  width: "75%",
+  maxWidth: "800px",
+  margin: "0 auto",
+  borderRadius: "16px",
+  overflow: "hidden",
+  boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
+};
+
+const slideshowImage = {
+  width: "100%",
+  aspectRatio: "10.18 / 8.18",
+  objectFit: "contain" as const,
+  display: "block",
 };
