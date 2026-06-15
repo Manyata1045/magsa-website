@@ -185,8 +185,12 @@ export default function Academy() {
         </div>
 
         {/* ---------------- FEE STRUCTURE ---------------- */}
-        <div style={{ marginTop: "clamp(54px, 9vw, 90px)" }}>
+{/* ---------------- FEE STRUCTURE ---------------- */}
+<div style={{ marginTop: "clamp(54px, 9vw, 90px)" }}>
 
+  <h2 style={feeHeading}>
+    Basic Fee Structure
+  </h2>
           {/* AGE 10+ */}
           <h3 style={sectionHeading}>10 Years & Above</h3>
 
@@ -205,7 +209,7 @@ export default function Academy() {
           </div>
 
           {/* AGE BELOW 9 */}
-          <h3 style={sectionHeading}>9 Years & Below</h3>
+          <h3 style={sectionHeading}>Below 10 years</h3>
 
           <div style={grid}>
             {kidsCourses.map((course, i) => (
@@ -374,6 +378,7 @@ const programs = [
   },
   {
     title: "Diploma",
+    description: "Diploma courses coming soon"
   },
 ];
 
