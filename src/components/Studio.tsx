@@ -108,7 +108,20 @@ useEffect(() => {
     If you can’t come to the studio, we will bring the studio to you!
   </p>
 </div>
+        {/* WORKSHOPS */}
+        <div style={{ marginBottom: "clamp(48px, 8vw, 80px)" }}>
+          <h3 style={sectionHeading}>Workshop Catalogue</h3>
 
+          <div style={workshopListContainer}>
+  <ol style={workshopList}>
+    {workshops.map((workshop, i) => (
+      <li key={i} style={workshopListItem}>
+        {workshop}
+      </li>
+    ))}
+  </ol>
+</div>
+        </div>
         {/* BOOK US */}
         <div style={{ marginTop: "clamp(54px, 9vw, 90px)", marginBottom: "clamp(48px, 8vw, 80px)" }}>
           <h3 style={sectionHeading}>
@@ -137,20 +150,6 @@ useEffect(() => {
           </div>
         </div>
 
-        {/* WORKSHOPS */}
-        <div style={{ marginBottom: "clamp(48px, 8vw, 80px)" }}>
-          <h3 style={sectionHeading}>Workshop Experiences</h3>
-
-          <div style={workshopListContainer}>
-  <ol style={workshopList}>
-    {workshops.map((workshop, i) => (
-      <li key={i} style={workshopListItem}>
-        {workshop}
-      </li>
-    ))}
-  </ol>
-</div>
-        </div>
 
         {/* CTA */}
         <div style={ctaBox}>
