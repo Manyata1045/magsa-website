@@ -283,9 +283,8 @@ const eventHeader = {
 };
 
 const eventCopy = {
-  display: "flex",
-  flexDirection: "column" as const,
-  gap: "12px",
+  textAlign: "center" as const,
+  margin: "0 auto",
 };
 
 const eventEyebrow = {
