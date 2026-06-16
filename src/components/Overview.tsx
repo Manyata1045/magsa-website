@@ -74,7 +74,8 @@ export default function Overview() {
         {/* PREVIEW CARDS SECTION - Visual emphasis */}
         <div style={previewSection}>
         <div style={homeAboutSection}>
-  <h2 style={homeAboutHeading} className="magsa-home-about-title">A Universe of Creativity</h2>
+  <h2 style={homeAboutHeading} className="magsa-home-about-title">A living Institution of Art
+  </h2>
 
   <p style={homeAboutText} className="magsa-home-about-text">
     <strong>Mandala Art Gallery • Studio • Academy (MAGSA)</strong>  is a premier art institution, situated in Jaipur, a creative space rooted in the belief that art has the power to transform how we see the world and our place within it.
@@ -119,7 +120,7 @@ Whether you are encountering art for the first time or deepening a lifelong prac
           <div style={eventHeader} className="magsa-event-header">
             <div style={eventCopy}>
               <span style={eventEyebrow}>Exhibitions • Workshops • Art Events</span>
-              <h2 style={eventTitle} className="magsa-event-title">A home for artists and ideas</h2>
+              <h2 style={eventTitle} className="magsa-event-title">Universe of creativity</h2>
             </div>
           </div>
 
