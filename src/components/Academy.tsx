@@ -181,9 +181,6 @@ export default function Academy() {
     From different art styles, forms and techniques to immersive creative
     explorations, the Academy nurtures each student in a supportive,
     professionally guided, and genuinely inspiring environment.
-  </p>
-
-  <p style={aboutText}>
     We also prepare students for what comes next, offering focused guidance
     for creative entrance examinations, certification programmes, exhibition
     participation, and portfolio development.
@@ -193,22 +190,18 @@ export default function Academy() {
     For our youngest learners, the Academy runs a dedicated Education Through
     Art programme using artistic practice as a tool for cognitive, analytical,
     and creative development in children up to 12 years of age.
-  </p>
-
-  <p style={aboutText}>
     Whether you are here to discover, to grow, or to master, the MAGSA Academy
     meets you where you are and takes you further.
   </p>
 </div>
 
-        {/* ---------------- FEE STRUCTURE ---------------- */}
-{/* ---------------- FEE STRUCTURE ---------------- */}
+
 <div style={{ marginTop: "clamp(54px, 9vw, 90px)" }}>
 
   <h2 style={feeHeading}>
     Basic Fee Structure
   </h2>
-          {/* AGE 10+ */}
+          
           <h3 style={sectionHeading}>10 Years & Above</h3>
 
           <div style={grid}>
@@ -225,7 +218,7 @@ export default function Academy() {
             ))}
           </div>
 
-          {/* AGE BELOW 9 */}
+          
           <h3 style={sectionHeading}>Below 10 years</h3>
 
           <div style={grid}>
@@ -242,26 +235,11 @@ export default function Academy() {
             ))}
           </div>
 
-          {/* IMPORTANT INFO */}
-          <div style={noteBox}>
-            <h4 style={noteTitle}>
-              Important Information
-            </h4>
 
-            <ul style={noteList}>
-              <li>1 hour per class</li>
-              <li>Registration fee: ₹100</li>
-              <li>Classes must be completed within duration</li>
-              <li>Sunday- OFF</li>
-    
-            </ul>
-          </div>
-        </div>
-
-        {/* ---------------- SPECIAL PROGRAMS ---------------- */}
+        {/* ---------------- OUR PROGRAMS ---------------- */}
         <div style={{ marginTop: "clamp(54px, 9vw, 90px)" }}>
           <h3 style={sectionHeading}>
-            Special Programs
+            Our Programs
           </h3>
 
           <div style={programGrid}>
@@ -276,6 +254,18 @@ export default function Academy() {
                 )}
               </div>
             ))}
+          </div>
+        </div>
+        <div style={noteBox}>
+            <h4 style={noteTitle}>
+              Important Information
+            </h4>
+
+            <ul style={noteList}>
+              <li>Classes must be completed within duration</li>
+              <li>Sundays are OFF</li>
+    
+            </ul>
           </div>
         </div>
         <div style={{ marginTop: "clamp(60px, 8vw, 90px)" }}>
