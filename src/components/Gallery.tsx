@@ -280,12 +280,9 @@ export default function Gallery() {
   </p>
 
   <p style={aboutText}>
-    The MAGSA Gallery is a refined exhibition space in the heart of Jaipur —
+    The MAGSA Gallery is a refined exhibition space in the heart of Jaipur,
     home to a permanent collection and a thoughtfully rotating programme of
     exhibitions celebrating the works of our faculty, students, and invited artists.
-  </p>
-
-  <p style={aboutText}>
     Every work here has been selected with care. Every wall, a considered choice.
   </p>
 </div>
