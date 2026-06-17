@@ -7,8 +7,8 @@ const contactCards = [
   },
   {
     label: "Visit",
-    value: "Jaipur, Rajasthan",
-    note: "Gallery, studio, and academy experiences by appointment.",
+    value: "Mandala Art Gallery Studio Academy",
+    note: "Jaipur, Rajasthan • Gallery, Studio & Academy",
     accent: "#7A3E5C",
   },
   {
@@ -26,10 +26,10 @@ const contactCards = [
 ];
 
 const trustItems = [
-  "Established in Jaipur",
-  "Gallery exhibitions",
-  "Studio workshops",
-  "Structured art education",
+  "Founded in 2017",
+  "Gallery • Studio • Academy",
+  "9 Years of Creative Community",
+  "Workshops, Exhibitions & Art Education",
 ];
 
 export default function Contact() {
@@ -38,7 +38,9 @@ export default function Contact() {
       <div className="container">
         <div style={heroStyle}>
           <span style={eyebrow}>Contact MAGSA</span>
-          <h1 style={titleStyle}>Begin a conversation with art.</h1>
+          <h1 style={titleStyle}>
+  Let's create something meaningful together.
+</h1>
           <p style={subtitleStyle}>
             Reach out for artworks, workshops, academy admissions, exhibitions,
             collaborations, or custom creative experiences in Jaipur.
@@ -120,19 +122,52 @@ export default function Contact() {
         </div>
 
         <div style={socialSection}>
-          <div>
-            <span style={socialEyebrow}>Social Gallery</span>
-            <h2 style={socialTitle}>Follow the evolving studio story.</h2>
-          </div>
+  <div>
+    <span style={socialEyebrow}>Stay Connected</span>
 
-          <div style={instagramBox}>
-            <span style={instagramHandle}>Instagram placeholder</span>
-            <p style={instagramText}>
-              Add MAGSA Instagram updates, exhibition highlights, workshop
-              moments, and student work here.
-            </p>
-          </div>
-        </div>
+    <h2 style={socialTitle}>
+      Follow MAGSA beyond the gallery walls.
+    </h2>
+
+    <p style={socialDescription}>
+      Discover exhibitions, student achievements, workshops,
+      behind-the-scenes studio moments, and new artwork releases.
+    </p>
+  </div>
+
+  <div style={socialCard}>
+    <h3 style={socialCardTitle}>Find Us Online</h3>
+
+    <div style={socialLinks}>
+      <a
+        href="https://www.instagram.com/mandala_art_gallery_studio_acd"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={socialLink}
+      >
+        Instagram →
+      </a>
+
+      <a
+        href="https://www.facebook.com/p/Mandala-Art-GalleryStudioAcademy-by-Vasudha-Sharma-100064097738020/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={socialLink}
+      >
+        Facebook →
+      </a>
+
+      <a
+        href="https://www.linkedin.com/company/mandala-art-gallery-studio-academy/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={socialLink}
+      >
+        LinkedIn →
+      </a>
+    </div>
+  </div>
+</div>
       </div>
     </section>
   );
@@ -145,7 +180,7 @@ const pageStyle = {
 };
 
 const heroStyle = {
-  maxWidth: "780px",
+  maxWidth: "1100px",
   margin: "0 auto clamp(30px, 6vw, 52px)",
   textAlign: "center" as const,
 };
@@ -215,6 +250,7 @@ const cardValue = {
   fontWeight: 600,
   lineHeight: 1.2,
   letterSpacing: "0.01em",
+  overflowWrap: "anywhere" as const,
 };
 
 const contactLink = {
@@ -330,29 +366,45 @@ const socialTitle = {
   lineHeight: 1.14,
   letterSpacing: "0.01em",
 };
+  
+const socialDescription = {
+  marginTop: "14px",
+  color: "#555",
+  lineHeight: "1.8",
+  fontSize: "clamp(1rem, 2.4vw, 1.08rem)",
+};
 
-const instagramBox = {
-  padding: "clamp(22px, 5vw, 32px)",
-  minHeight: "170px",
+const socialCard = {
+  backgroundColor: "#fff",
+  borderRadius: "12px",
+  padding: "32px",
+  border: "1px solid rgba(122,62,92,0.12)",
+  boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
+};
+
+const socialCardTitle = {
+  margin: "0 0 20px",
+  color: "#7A3E5C",
+  fontSize: "1.3rem",
+  fontWeight: 600,
+};
+
+const socialLinks = {
   display: "flex",
   flexDirection: "column" as const,
-  justifyContent: "center",
-  backgroundColor: "#fff",
-  border: "1px dashed rgba(199, 122, 163, 0.48)",
+  gap: "16px",
+};
+
+const socialLink = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+  padding: "14px 18px",
   borderRadius: "8px",
-};
-
-const instagramHandle = {
-  color: "#C77AA3",
+  backgroundColor: "#f8f8f8",
+  border: "1px solid rgba(122,62,92,0.08)",
+  color: "#7A3E5C",
+  textDecoration: "none",
   fontWeight: 600,
-  letterSpacing: "0.1em",
-  textTransform: "uppercase" as const,
-  fontSize: "0.84rem",
-};
-
-const instagramText = {
-  margin: "12px 0 0",
-  color: "#666",
-  lineHeight: 1.72,
-  fontSize: "clamp(0.96rem, 2.4vw, 1rem)",
+  transition: "all 0.2s ease",
 };
