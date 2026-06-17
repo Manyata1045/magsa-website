@@ -315,6 +315,29 @@ export default function Gallery() {
           </div>
         </div>
 
+        <div style={galleryNoticeBox}>
+  <div style={galleryNoticeIcon}>⚠️</div>
+
+  <div>
+    <h4 style={galleryNoticeTitle}>
+      Gallery Notice
+    </h4>
+
+    <p style={galleryNoticeText}>
+      Many of our works are not displayed on this website.
+    </p>
+
+    <p style={galleryNoticeText}>
+      The full collection and the true experience of the Gallery exists only
+      within our walls.
+    </p>
+
+    <p style={galleryNoticeText}>
+      We warmly invite you to visit us in Jaipur and experience the art in person.
+    </p>
+  </div>
+</div>
+
         {/* EXHIBITIONS */}
         <div style={{ marginBottom: "clamp(48px, 8vw, 80px)" }}>
           <h3 style={sectionHeading}>Exhibitions</h3>
@@ -863,4 +886,35 @@ const reviewImage = {
 const reviewContent = {
   flex: 1,
   minWidth: "260px",
+};
+const galleryNoticeBox = {
+  display: "flex",
+  gap: "18px",
+  alignItems: "flex-start",
+  padding: "28px",
+  marginBottom: "clamp(48px, 8vw, 80px)",
+  backgroundColor: "#FFF8F1",
+  border: "1px solid rgba(199,122,163,0.18)",
+  borderLeft: "5px solid #C77AA3",
+  borderRadius: "14px",
+  boxShadow: "0 8px 24px rgba(0,0,0,0.04)",
+};
+
+const galleryNoticeIcon = {
+  fontSize: "1.8rem",
+  lineHeight: 1,
+};
+
+const galleryNoticeTitle = {
+  margin: "0 0 10px",
+  color: "#7A3E5C",
+  fontSize: "clamp(1.1rem, 3vw, 1.3rem)",
+  fontWeight: 700,
+};
+
+const galleryNoticeText = {
+  margin: "0 0 10px",
+  color: "#555",
+  lineHeight: "1.8",
+  fontSize: "clamp(0.95rem, 2.4vw, 1.05rem)",
 };

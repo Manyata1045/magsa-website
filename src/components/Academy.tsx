@@ -196,49 +196,10 @@ export default function Academy() {
 </div>
 
 
-<div style={{ marginTop: "clamp(54px, 9vw, 90px)" }}>
-
-  <h2 style={feeHeading}>
-    Basic Fee Structure
-  </h2>
-          
-          <h3 style={sectionHeading}>10 Years & Above</h3>
-
-          <div style={grid}>
-            {adultCourses.map((course, i) => (
-              <div key={i} style={card} className="card">
-                <h4 style={cardTitle}>{course.duration}</h4>
-
-                <p style={price}>₹{course.price}</p>
-
-                {course.discount && (
-                  <p style={discount}>{course.discount}</p>
-                )}
-              </div>
-            ))}
-          </div>
-
-          
-          <h3 style={sectionHeading}>Below 10 years</h3>
-
-          <div style={grid}>
-            {kidsCourses.map((course, i) => (
-              <div key={i} style={card} className="card">
-                <h4 style={cardTitle}>{course.duration}</h4>
-
-                <p style={price}>₹{course.price}</p>
-
-                {course.discount && (
-                  <p style={discount}>{course.discount}</p>
-                )}
-              </div>
-            ))}
-          </div>
-
 
         {/* ---------------- OUR PROGRAMS ---------------- */}
-        <div style={{ marginTop: "clamp(54px, 9vw, 90px)" }}>
-          <h3 style={sectionHeading}>
+        <div style={{ marginTop: "40px" }}>
+                    <h3 style={sectionHeading}>
             Our Programs
           </h3>
 
@@ -267,7 +228,6 @@ export default function Academy() {
     
             </ul>
           </div>
-        </div>
         <div style={{ marginTop: "clamp(60px, 8vw, 90px)" }}>
   <h3 style={sectionHeading}>
     More Moments From MAGSA Academy
@@ -287,7 +247,7 @@ export default function Academy() {
     ))}
   </div>
 </div>
-      </div>
+</div>
 
       {selectedImage && (
         <div
@@ -342,25 +302,6 @@ const bottomImages = [
   academy16,
 ];
 
-const adultCourses = [
-  { duration: "8 Days", price: "1500" },
-  { duration: "12 Days", price: "1800" },
-  { duration: "20 Days", price: "2600" },
-  { duration: "1 Month", price: "3000" },
-  { duration: "3 Months", price: "8000", discount: "Save ₹1000" },
-  { duration: "6 Months", price: "14000", discount: "Save ₹4000" },
-  { duration: "1 Year", price: "26000", discount: "Save ₹10000" },
-];
-
-const kidsCourses = [
-  { duration: "8 Days", price: "1200" },
-  { duration: "12 Days", price: "1500" },
-  { duration: "20 Days", price: "2200" },
-  { duration: "1 Month", price: "2600" },
-  { duration: "3 Months", price: "7000", discount: "Save ₹800" },
-  { duration: "6 Months", price: "12600", discount: "Save ₹3000" },
-  { duration: "1 Year", price: "24000", discount: "Save ₹7200" },
-];
 
 const programs = [
   {
@@ -391,20 +332,6 @@ const programs = [
 
 /* ---------------- STYLES ---------------- */
 
-// const titleStyle = {
-//   color: "#C77AA3",
-//   fontSize: "clamp(2rem, 6vw, 2.7rem)",
-//   fontWeight: 600,
-//   lineHeight: 1.08,
-//   letterSpacing: "0.02em",
-// };
-
-// const subtitle = {
-//   color: "#666",
-//   marginTop: "12px",
-//   fontSize: "clamp(1rem, 2.8vw, 1.1rem)",
-//   lineHeight: 1.65,
-// };
 
 const galleryIntro = {
   marginBottom: "24px",
@@ -474,44 +401,6 @@ const sectionHeading = {
   letterSpacing: "0.02em",
 };
 
-const grid = {
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))",
-  gap: "clamp(16px, 4vw, 22px)",
-};
-
-const card = {
-  padding: "clamp(20px, 5vw, 22px)",
-  backgroundColor: "#ffffff",
-  borderRadius: "12px",
-  border: "1px solid #e6e6e6",
-  boxShadow: "0 8px 25px rgba(0,0,0,0.06)",
-};
-
-const cardTitle = {
-  fontSize: "clamp(1.05rem, 2.8vw, 1.18rem)",
-  color: "#b96590",
-  fontWeight: 600,
-  margin: "0 0 6px",
-  lineHeight: 1.18,
-};
-
-const price = {
-  margin: "10px 0 0",
-  fontWeight: "700",
-  color: "#5CBCC3",
-  fontSize: "clamp(1.12rem, 3vw, 1.28rem)",
-  lineHeight: 1.15,
-};
-
-const discount = {
-  margin: "7px 0 0",
-  fontSize: "0.92rem",
-  color: "#7A3E5C",
-  fontWeight: 600,
-  lineHeight: 1.35,
-};
-
 const noteBox = {
   marginTop: "50px",
   padding: "clamp(24px, 5vw, 34px)",
@@ -567,14 +456,7 @@ const programText = {
   fontSize: "clamp(0.95rem, 2.4vw, 1rem)",
   margin: 0,
 };
-const feeHeading = {
-  textAlign: "center" as const,
-  color: "#5CBCC3",
-  fontSize: "clamp(1.8rem, 5vw, 2.4rem)",
-  fontWeight: 700,
-  marginBottom: "40px",
-  letterSpacing: "0.02em",
-};
+
 const aboutTagline = {
   color: "#7A3E5C",
   fontSize: "clamp(1.05rem, 2.8vw, 1.2rem)",

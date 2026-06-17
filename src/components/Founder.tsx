@@ -49,12 +49,6 @@ const workshopItems = [
   "Lippan art workshop",
 ];
 
-const philosophyPoints = [
-  "Art as a practice of patience, observation, and emotional presence.",
-  "Learning that builds confidence as much as technique.",
-  "Workshops that invite people to experience creativity as community.",
-];
-
 export default function Founder() {
   return (
     <section style={pageStyle}>
@@ -200,24 +194,40 @@ export default function Founder() {
         </div>
 
         <div style={philosophySection}>
-          <span style={eyebrow}>Philosophy</span>
-          <h2 style={philosophyTitle}>Art becomes meaningful when it connects.</h2>
-          <p style={philosophyText}>
-            Vasudha's work as a founder and educator is guided by the belief
-            that art should feel personal, accessible, and emotionally alive.
-            MAGSA is built as a space where students, artists, collectors, and
-            visitors can engage with creativity through practice, dialogue, and
-            shared experience.
-          </p>
+  <span style={eyebrow}>Founder Note</span>
 
-          <div style={philosophyGrid}>
-            {philosophyPoints.map((point) => (
-              <p key={point} style={philosophyPoint}>
-                {point}
-              </p>
-            ))}
-          </div>
-        </div>
+  <h2 style={philosophyTitle}>
+    By Vasudha Sharma
+  </h2>
+
+  <p style={philosophyText}>
+    MAGSA was built from a feeling that art deserves a home where it is
+    taken seriously and experienced fully.
+  </p>
+
+  <p style={philosophyText}>
+    Nine years on, watching this community grow into what it has become,
+    that feeling has only deepened.
+  </p>
+
+  <p style={philosophyText}>
+    We are just getting started.
+  </p>
+
+  <p
+    style={{
+      marginTop: "28px",
+      color: "#7A3E5C",
+      fontWeight: 600,
+      fontSize: "1rem",
+      letterSpacing: "0.03em",
+    }}
+  >
+    — Vasudha Sharma
+    <br />
+    Founder & Director, MAGSA
+  </p>
+</div>
 
         <div style={contactPanel} className="founder-contact-panel">
           <div>
@@ -498,22 +508,7 @@ const philosophyText = {
   lineHeight: 1.82,
 };
 
-const philosophyGrid = {
-  marginTop: "24px",
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 240px), 1fr))",
-  gap: "16px",
-};
 
-const philosophyPoint = {
-  margin: 0,
-  padding: "18px",
-  color: "#7A3E5C",
-  backgroundColor: "#fbfbfb",
-  border: "1px solid rgba(122, 62, 92, 0.08)",
-  borderRadius: "8px",
-  lineHeight: 1.65,
-};
 
 const contactPanel = {
   marginTop: "clamp(40px, 7vw, 70px)",

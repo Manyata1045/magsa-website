@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 export default function About() {
   return (
     <section style={{ backgroundColor: "#f9f9f9", padding: "clamp(38px, 7vw, 60px) clamp(16px, 4vw, 20px)" }}>      
@@ -27,124 +26,191 @@ export default function About() {
             About MAGSA
           </h2>
 
-          <h3 style={subHeading}>Universe of creativity</h3>
+          <h3 style={subHeading}>
+  Nine years of art, community, and creative purpose.
+</h3>
 
-          <p style={textStyle}>
-            <strong>Mandala Art Gallery • Studio • Academy (MAGSA)</strong> is a
-            creative space where art is experienced, created, and studied.
-            Established in 2017 in Jaipur, MAGSA has grown into a respected
-            destination for artists, learners, collectors, and art enthusiasts.
-          </p>
+<p style={taglineStyle}>
+  Rooted in Jaipur, growing without limits.
+</p>
 
-          <p style={textStyle}>
-            Founded by <strong>Vasudha Sharma</strong>, the institution was
-            envisioned as more than an art space. It is a place where
-            creativity finds expression, purpose, and connection.
-          </p>
+<div style={divider} />
 
-          <div style={divider} />
+<h3 style={sectionHeading}>A Space Born From Love for Art</h3>
 
-          {/* WHAT WE DO */}
-          <h3 style={sectionHeading}>Three Pillars of MAGSA</h3>
+<p style={textStyle}>
+  <strong>Mandala Art Gallery • Studio • Academy (MAGSA)</strong> is not simply
+  an art institution. It is a living, growing creative community built on a
+  simple but profound belief: that art has the power to transform how we see
+  the world, how we think, and how we connect with one another.
+</p>
 
-          <div style={cardRow}>
+<p style={textStyle}>
+  Since 2017, MAGSA has been Jaipur's home for serious artistic learning,
+  curated exhibitions, immersive studio experiences, and a community that
+  places creativity at the centre of everything it does.
+</p>
 
-  {/* GALLERY */}
-  <div
-  style={{
-    ...miniCard,
-    borderTop: "4px solid #7A3E5C",
-  }}
-  className="card"
->    <h4 style={{ ...miniTitle, color: "#7A3E5C" }}>
-  Gallery
-</h4>
+<div style={divider} />
 
-<p style={{ ...miniText, color: "#6b4a58" }}>
-      Original artworks, exhibitions, and commissioned pieces
-      created for thoughtful, meaningful spaces.
-    </p>
+<h3 style={sectionHeading}>Where It All Began</h3>
 
-    <Link
-  to="/gallery"
-  style={{ ...linkStyle, color: "#7A3E5C" }}
->
-      Know More →
-    </Link>
-  </div>
+<p style={textStyle}>
+  MAGSA was founded in 2017 by <strong>Vasudha Sharma</strong> at just
+  nineteen years of age, out of a deeply personal love for art and a vision to
+  create something Jaipur did not yet have: a space of genuine creative
+  freedom, artistic rigour, and quiet peace.
+</p>
 
-  {/* STUDIO */}
-  <div
-  style={{
-    ...miniCard,
-    borderTop: "4px solid #5CBCC3",
-  }}
-  className="card"
->    <h4 style={{ ...miniTitle, color: "#5CBCC3" }}>
-  Studio
-</h4>
+<p style={textStyle}>
+  A place where people could come to make art, to see art, and simply to be
+  among others who understood why art matters.
+</p>
 
-<p style={{ ...miniText, color: "#4d8f95" }}>
-      Workshops, collaborations, cafe events, and immersive
-      art experiences shaped around creativity and community.
-    </p>
+<p style={textStyle}>
+  What began as one person's vision has grown, over nine years, into something
+  far larger than any single individual. Today, MAGSA is home to a thriving
+  community of students, practising artists, collaborators, and art lovers
+  united by a shared creative spirit and a belief that artistic expression is
+  not a luxury, but a necessity.
+</p>
 
-    <Link
-  to="/studio"
-  style={{ ...linkStyle, color: "#5CBCC3" }}
->      Know More →
-    </Link>
-  </div>
+<p style={textStyle}>
+  From its earliest days to collaborations with <strong>Vogue India</strong>,
+  <strong> Shoppers Stop</strong>, and leading creative spaces across the
+  country, MAGSA has remained true to its founding impulse: art, done
+  seriously, in a space that feels like it belongs to everyone who walks
+  through its doors.
+</p>
 
-  {/* ACADEMY */}
-  <div
-  style={{
-    ...miniCard,
-    borderTop: "4px solid #C77AA3",
-  }}
-  className="card"
->    <h4 style={{ ...miniTitle, color: "#C77AA3" }}>
-  Academy
-</h4>
+<div style={divider} />
 
-<p style={{ ...miniText, color: "#9a617d" }}>
-      Structured art learning for beginners and advanced
-      learners, with a focus on creativity, confidence, and skill.
-    </p>
+<h3 style={sectionHeading}>What We Believe</h3>
 
-    <Link
-  to="/academy"
-  style={{ ...linkStyle, color: "#C77AA3" }}
->      Know More →
-    </Link>
-  </div>
+<p style={textStyle}>
+  At MAGSA, we believe that art is not merely a skill to be acquired; it is a
+  way of seeing, thinking, and being in the world.
+</p>
 
-</div>
+<p style={textStyle}>
+  We believe that creativity is not the preserve of a gifted few, but
+  something that can be cultivated, practised, and deepened by anyone willing
+  to engage seriously with the process.
+</p>
 
-          <div style={divider} />
+<p style={textStyle}>
+  We believe that a great art institution must do three things at once:
+</p>
 
-          {/* PHILOSOPHY */}
-          <h3 style={sectionHeading}>Our Philosophy</h3>
-          <p style={textStyle}>
-            Every piece at MAGSA is intentional and personal. We believe art
-            should do more than exist. It should connect with the space it
-            lives in and the person it belongs to.
-          </p>
+<p style={pillarsStyle}>
+  OBSERVE • CREATE • CURATE • SELL
+</p>
 
-          {/* VISION */}
-          <h3 style={sectionHeading}>Our Vision</h3>
-          <p style={textStyle}>
-            Our goal is to nurture creativity and provide meaningful exposure
-            to emerging artists. We help students become confident,
-            independent, and self-reliant creators while sharing the joy of
-            art.
-          </p>
+<p style={textStyle}>
+  To teach with rigour. To exhibit with intention. To build community with
+  warmth.
+</p>
 
-          <p style={textStyle}>
-            We also guide students in preparing for{" "}
-            <strong>NID and NIFT entrance exams</strong> and building strong
-            portfolios for national and international art institutions.
-          </p>
+<p style={textStyle}>
+  The Gallery, the Studio, and the Academy exist because all are necessary.
+  None is complete without the others.
+</p>
+
+<p style={textStyle}>
+  And above all, we believe that Jaipur, a city with one of the richest
+  artistic and cultural legacies in India, deserves a world-class creative
+  institution it can call its own.
+</p>
+
+<p style={textStyle}>
+  That is what MAGSA is working toward every day.
+</p>
+
+<div style={divider} />
+
+<h3 style={sectionHeading}>What Makes MAGSA Different</h3>
+
+<p style={featureTitle}>More Than an Art School</p>
+
+<p style={textStyle}>
+  MAGSA is the only institution in Jaipur that brings together a professional
+  Gallery, a fully equipped Studio, and a structured Academy under one roof,
+  creating an environment where learning, making, and exhibiting happen in the
+  same space and in constant conversation with one another.
+</p>
+
+<p style={featureTitle}>A Community, Not Just a Class</p>
+
+<p style={textStyle}>
+  Over nine years, MAGSA has built a genuine community of artists, students,
+  and art lovers who return not only for the programmes but also for the
+  people, the relationships, and the creative energy of the space.
+</p>
+
+<p style={featureTitle}>Education Through Art</p>
+
+<p style={textStyle}>
+  Our pioneering programme for children up to twelve years of age uses
+  artistic practice as a tool for cognitive, analytical, and creative
+  development, extending far beyond conventional art instruction.
+</p>
+
+<p style={featureTitle}>Industry Connections That Matter</p>
+
+<p style={textStyle}>
+  From Vogue India to Shoppers Stop, MAGSA's collaborations bring students and
+  artists into direct contact with the professional creative world.
+</p>
+
+<p style={featureTitle}>Founded by a Practising Artist</p>
+
+<p style={textStyle}>
+  MAGSA is led by someone who actively creates art, not simply manages an
+  institution. That difference is reflected in every programme, exhibition,
+  and experience we offer.
+</p>
+
+<p style={featureTitle}>A Vision for the Future</p>
+
+<p style={textStyle}>
+  MAGSA continues to grow toward becoming a fully recognised professional art
+  school, bringing international standards of artistic education and creative
+  practice to Jaipur.
+</p>
+
+<div style={divider} />
+
+<h3 style={sectionHeading}>The Place Itself</h3>
+
+<p style={textStyle}>
+  The MAGSA space in Jaipur is designed to feel unlike anywhere else—part
+  gallery, part studio, part classroom, and entirely its own.
+</p>
+
+<p style={textStyle}>
+  It is a place where the walls hold original artworks, where the tables are
+  always ready for the next session, and where the atmosphere quietly insists
+  that something creative is always possible.
+</p>
+
+<p style={textStyle}>
+  Above all, it is a space of peace, exactly as its founder intended it to be.
+</p>
+
+<div style={divider} />
+
+<h3 style={sectionHeading}>Come Be Part of It</h3>
+
+<p style={textStyle}>
+  Whether you are a student ready to begin, a collector drawn to the Gallery,
+  a brand seeking a creative partner, or simply someone who loves art and
+  wants to be around more of it, MAGSA welcomes you.
+</p>
+
+<p style={textStyle}>
+  There is always room for another creative journey to begin.
+</p>
+
         </div>
       </div>
     </section>
@@ -163,10 +229,11 @@ const textStyle = {
 const subHeading = {
   color: "#7A3E5C",
   marginBottom: "10px",
-  fontSize: "clamp(1.28rem, 4vw, 1.6rem)",
+  fontSize: "clamp(1.4rem, 4vw, 1.8rem)",
   fontWeight: 600,
   lineHeight: 1.18,
   letterSpacing: "0.02em",
+  textAlign: "center" as const,
 };
 
 const sectionHeading = {
@@ -185,40 +252,31 @@ const divider = {
   backgroundColor: "#eee",
 };
 
-const cardRow = {
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))",
-  gap: "clamp(16px, 4vw, 20px)",
-  marginTop: "20px",
+
+const taglineStyle = {
+  color: "#C77AA3",
+  fontSize: "clamp(1rem, 2.8vw, 1.15rem)",
+  fontWeight: 500,
+  marginTop: "-6px",
+  marginBottom: "10px",
+  textAlign: "center" as const,
 };
 
-const miniCard = {
-  backgroundColor: "#fafafa",
-  padding: "18px",
-  borderRadius: "10px",
-  border: "1px solid #eee",
-};
-
-const miniTitle = {
+const pillarsStyle = {
   color: "#7A3E5C",
+  fontWeight: 700,
+  letterSpacing: "0.12em",
+  textAlign: "center" as const,
+  margin: "22px 0",
+  fontSize: "clamp(1rem, 2.8vw, 1.15rem)",
+};
+
+const featureTitle = {
+  color: "#7A3E5C",
+  fontWeight: 600,
+  marginTop: "28px",
   marginBottom: "8px",
-  fontSize: "clamp(1.08rem, 3vw, 1.22rem)",
-  fontWeight: 600,
-  lineHeight: 1.15,
+  fontSize: "clamp(1rem, 2.6vw, 1.12rem)",
+  borderLeft: "4px solid #C77AA3",
+  paddingLeft: "12px",
 };
-
-const miniText = {
-  fontSize: "clamp(0.94rem, 2.4vw, 1rem)",
-  color: "#555",
-  lineHeight: 1.65,
-};
-const linkStyle = {
-  display: "inline-block",
-  marginTop: "14px",
-  color: "#5CBCC3",
-  fontWeight: 600,
-  textDecoration: "none",
-  fontSize: "0.96rem",
-  letterSpacing: "0.02em",
-};
-
