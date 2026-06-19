@@ -7,6 +7,10 @@ import img4 from "../assets/steps-folder/4.jpg";
 import img5 from "../assets/steps-folder/5.jpg";
 import img6 from "../assets/steps-folder/6.jpg";
 import img7 from "../assets/steps-folder/7.jpg";
+import workshopImg from "../assets/studio/workshop.jpeg";
+import collaborationImg from "../assets/studio/collaboration.jpg";
+import communityImg from "../assets/studio/community.jpg";
+import corporateImg from "../assets/studio/corporate.jpg";
 export default function Studio() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -24,6 +28,29 @@ useEffect(() => {
                   marginTop: "-60px"
 
        }}>
+        <style>
+{`
+@media (max-width:1024px){
+  .studio-grid{
+    grid-template-columns: repeat(2,1fr) !important;
+  }
+}
+
+@media (max-width:640px){
+  .studio-grid{
+    grid-template-columns:1fr !important;
+  }
+}
+  .studio-card {
+  transition: all 0.3s ease;
+}
+
+.studio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+`}
+</style>
       <div className="container">
       {/* STUDIO INTRO */}
       <div style={aboutBox}>
@@ -49,65 +76,89 @@ useEffect(() => {
     expected and most remembered.
   </p>
 </div>
-        {/* EVENT PHOTOS */}
-        <div style={{ marginBottom: "clamp(48px, 8vw, 80px)" }}>
-          <h3 style={sectionHeading}>Creative Event Highlights</h3>
+ 
+<h3
+  style={{
+    ...sectionHeading,
+    textAlign: "center",
+    color: "#5CBCC3",
+    marginTop: "50px",
+    marginBottom: "30px",
+  }}
+>
+  What The Studio Offers
+</h3>
 
-          <div style={photoGrid}>
-            {eventPhotos.map((photo, i) => (
-              <div key={i} className="gallery-card" style={photoCard}>
-                <img
-                  src={photo}
-                  alt="Studio Event"
-                  className="gallery-img"
-                  style={photoStyle}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+<div
+  className="studio-grid"
+  style={{
+    ...studioGrid,
+    marginTop: "40px",
+    marginBottom: "60px",
+  }}
+>
+<div style={pillarCard} className="card studio-card">
+      <img src={workshopImg} alt="Art Workshops" style={pillarImage} />
 
-       {/* STUDIO TEXT */}
-<div style={aboutBox}>
-  <h3 style={aboutHeading}>
-    What The Studio Offers
-  </h3>
+    <div style={pillarContent}>
+      <h4 style={{ ...pillarTitle, color: "#7A3E5C" }}>
+        Art Workshops
+      </h4>
 
-  <p style={aboutText}>
-    <strong>Art Workshops</strong>
-    <br />
-    Open and themed workshops for individuals of all skill levels—from complete beginners to practising artists. Hands-on, guided, and designed to be genuinely enjoyable experiences.
-  </p>
+      <p style={pillarText}>
+        Hands-on workshops for beginners, hobbyists, and serious learners,
+        designed to encourage exploration, creativity, and artistic confidence.
+      </p>
+    </div>
+  </div>
 
-  <p style={aboutText}>
-    <strong>Creative Collaborations</strong>
-    <br />
-    The Studio regularly partners with cafés, brands, and cultural spaces to produce curated artistic experiences that go beyond the conventional, bringing art into everyday settings.
-  </p>
+  <div style={pillarCard} className="card studio-card">
+        <img src={collaborationImg} alt="Creative Collaborations" style={pillarImage} />
 
-  <p style={aboutText}>
-    <strong>Community Events</strong>
-    <br />
-    Art sessions, showcase evenings, and creative gatherings that bring Jaipur's art community together in one expressive, welcoming space.
-  </p>
+    <div style={pillarContent}>
+      <h4 style={{ ...pillarTitle, color: "#5CBCC3" }}>
+        Creative Collaborations
+      </h4>
 
-  <p style={aboutText}>
-    <strong>Corporate Events & Brand Experiences</strong>
-    <br />
-    MAGSA Studio is available for corporate team-building workshops, brand activations, client experiences, and private creative events. We design bespoke art experiences tailored to your organisation's goals—whether that is fostering creativity, celebrating a milestone, or simply doing something remarkably different.
-  </p>
+      <p style={pillarText}>
+        Partnerships with brands, cafés, cultural spaces, and creative
+        organisations to bring meaningful artistic experiences to wider audiences.
+      </p>
+    </div>
+  </div>
 
-  <p
-    style={{
-      ...aboutText,
-      marginBottom: 0,
-      fontWeight: 600,
-      color: "#7A3E5C",
-    }}
-  >
-    If you can’t come to the studio, we will bring the studio to you!
-  </p>
+  <div style={pillarCard} className="card studio-card">    <img src={communityImg} alt="Community Events" style={pillarImage} />
+
+    <div style={pillarContent}>
+      <h4 style={{ ...pillarTitle, color: "#C77AA3" }}>
+        Community Events
+      </h4>
+
+      <p style={pillarText}>
+        Creative gatherings, art sessions, showcases, and events that strengthen
+        Jaipur's growing artistic community.
+      </p>
+    </div>
+  </div>
+
+  <div style={pillarCard} className="card studio-card">
+        <img src={corporateImg} alt="Corporate Events" style={pillarImage} />
+
+    <div style={pillarContent}>
+      <h4 style={{ ...pillarTitle, color: "#7A3E5C" }}>
+        Corporate Events & Brand Experiences
+      </h4>
+
+      <p style={pillarText}>
+        Bespoke workshops, team-building sessions, launches, activations, and
+        immersive creative experiences tailored for organisations and brands.
+      </p>
+    </div>
+  </div>
 </div>
+
+
+  
         {/* WORKSHOPS */}
         <div style={{ marginBottom: "clamp(48px, 8vw, 80px)" }}>
           <h3 style={sectionHeading}>Workshop Catalogue</h3>
@@ -174,12 +225,7 @@ useEffect(() => {
 
 /* ---------------- DATA ---------------- */
 
-const eventPhotos = [
-  "https://images.unsplash.com/photo-1513364776144-60967b0f800f",
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-  "https://images.unsplash.com/photo-1518998053901-5348d3961a04",
-  "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5",
-];
+
 
 const bookingImages = [
   img1,
@@ -248,22 +294,6 @@ const sectionHeading = {
   letterSpacing: "0.02em",
 };
 
-const photoGrid = {
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 250px), 1fr))",
-  gap: "clamp(16px, 4vw, 20px)",
-};
-
-const photoCard = {
-  borderRadius: "14px",
-  overflow: "hidden",
-};
-
-const photoStyle = {
-  width: "100%",
-  height: "clamp(230px, 40vw, 300px)",
-  objectFit: "cover" as const,
-};
 
 const aboutBox = {
   backgroundColor: "#f9f9f9",
@@ -395,4 +425,41 @@ const studioTagline = {
   fontWeight: 600,
   margin: "0 0 18px",
   lineHeight: 1.4,
+};
+
+const studioGrid = {
+  display: "grid",
+  gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+  gap: "24px",
+};
+
+const pillarCard = {
+  backgroundColor: "#fff",
+  borderRadius: "14px",
+  overflow: "hidden",
+  boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+};
+
+const pillarImage = {
+  width: "100%",
+  height: "300px",
+  objectFit: "cover" as const,
+};
+
+const pillarContent = {
+  padding: "24px",
+};
+
+const pillarTitle = {
+  margin: "0 0 14px",
+  fontSize: "clamp(1.2rem, 2.5vw, 1.5rem)",
+  fontWeight: 600,
+  lineHeight: 1.2,
+};
+
+const pillarText = {
+  color: "#555",
+  lineHeight: "1.8",
+  fontSize: "1rem",
+  margin: 0,
 };
